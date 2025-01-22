@@ -31,7 +31,8 @@ endif ()
 # Убедитесь, что все файлы существуют
 add_executable(physics
         main.cpp World.cpp Ball.cpp Physics.cpp Color.cpp Painter.cpp Dust.cpp
-        black_box/Application.cpp black_box/View.cpp black_box/PainterImpl.cpp)
+        black_box/Application.cpp black_box/View.cpp black_box/PainterImpl.cpp 
+        SFML/Graphics/RenderWindow.hpp)
 target_link_libraries(physics PRIVATE sfml-graphics)
 
 target_compile_options(physics PRIVATE
